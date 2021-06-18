@@ -33,7 +33,7 @@ if (!$resul) {
 }else{
 	echo "
 	<script language = 'javascript'>
-	alert('Datos guardados con éxito')
+	alert('Datos guardados con exito')
 	window.location='home.php'
 	</script>";
 	exit();; 
