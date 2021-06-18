@@ -41,7 +41,7 @@ if (isset($_SESSION['usuario'])) { ?>
                         </div>
                         <div class="input-field col s12 m6 l3">
                             <i class="material-icons prefix">contact_mail</i>
-                            <input id="dui" name="dui" type="number" class="validate">
+                            <input id="dui" name="dui" type="tel" class="validate">
                             <label for="dui">Ingrese el DUI</label>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ if (isset($_SESSION['usuario'])) { ?>
                         </div>
                         <div class="input-field col s12 m6 l3">
                             <i class="material-icons prefix">swap_vert</i>
-                            <input id="canti" name="canti" type="number" class="validate">
+                            <input id="canti" name="canti" type="number" class="validate" min="0" max="10" step="1">
                             <label for="canti">Cantidad</label>
                         </div>
                         <div class="input-field col s12 m6 l3">
@@ -64,7 +64,7 @@ if (isset($_SESSION['usuario'])) { ?>
                         </div>
                         <div class="input-field col s12 m6 l3">
                             <i class="material-icons prefix">today</i>
-                            <input id="feEntrega" name="feEntrega" type="tel" class="datepicker2">
+                            <input id="feEntrega" name="feEntrega" type="text" class="datepicker2">
                             <label for="feEntrega">Fecha de entrega</label>
                         </div>
                         <div class="input-field col s12 m12 l5">
@@ -80,13 +80,24 @@ if (isset($_SESSION['usuario'])) { ?>
                     </div>
 
                     <div id="boton">
-                        <button class="btn waves-effect waves-light" type="submit" value="registrar" name="action">Generar Factura
+                        <button class="btn waves-effect waves-light" type="submit" value="registrar" name="action">Guardar datos <i class="material-icons right">save</i></button>
+                        <br>         
+                    </div>
+                    </form>
+                    <form action="GenerarFactura.php" method="POST">
+                            <button class="btn waves-effect waves-light" type="" value="" name="" style="margin-bottom: 5%;">Generar Factura
                             <i class="material-icons right">assignment</i>
                         </button>
-                        <br>
-                        <button type="submit" class="btn btn-primary btn-block"  name="cerrarSesion">Cerrar Sesion</button>         
-                    </div>
-                    
+                        </form>
+                        <form action="GenerarReporte.php" method="POST">
+                        <div id="boton">
+                            <button type="" class="btn btn-primary btn-block">Reporte de Facturas</button>
+                        </div>
+                    </form>
+                        <form action="" method="POST">
+                        <div id="boton">
+                            <button type="" class="btn btn-primary btn-block"  name="cerrarSesion">Cerrar Sesion</button>
+                        </div>
                     </form>
                 </div>
             </div>
