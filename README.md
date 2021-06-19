@@ -1,8 +1,8 @@
 # Trabajo de investigación
 I PARTE) Se presenta un resumen de los siguientes temas:
-Arquitectura CLEAN
-Principio SOLID
-Patrones de diseño
+Arquitectura CLEAN,
+Principio SOLID,
+Patrones de diseño,
 
 II PARTE) Se decidió desarrollar una aplicacion web para la "Zapateria Don Pablo"
 que permita el ingreso de cliente, creacion de factura y reportes.
